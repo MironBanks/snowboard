@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+html {
+	overflow: scroll;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+	width: 0px; /* Remove scrollbar space */
+	background: transparent; /* Optional: just make scrollbar invisible */
+}
+
+body {
+	height: 100%;
+	font-family: 'Montserrat', sans-serif;
+}
+
+header {
+	position: absolute;
+	padding: 1em;
+	z-index: 20;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	background: white;
+
+	a {
+		text-decoration: none;
+		color: black;
+	}
+
+	a.logo {
+		font-weight: 600;
+		text-transform: uppercase;
+	}
+
+	nav ul {
+		list-style-type: none;
+		display: flex;
+		justify-content: space-around;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+
+	li a {
+		padding: 0.6em;
+	}
+}
